@@ -48,8 +48,8 @@ resource "azurerm_postgresql_flexible_server" "backstage-backend-postgresql-serv
   version                = "13"
   delegated_subnet_id    = azurerm_subnet.PostgreSubnet.id
   private_dns_zone_id    = azurerm_private_dns_zone.dnszone.id
-  administrator_login    = var.PostgreSqlUsername
-  administrator_password = var.PostgreSqlPassword
+  administrator_login    = "backendadmin"
+  administrator_password = "spotify"
 
   storage_mb = 32768
 
