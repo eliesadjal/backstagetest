@@ -68,7 +68,7 @@ jobs:
 
     # Connection to our Azure subscription  
     - name: login into azure
-      run: az login -u eliesadjal92@gmail.com -p Mugiwara921511
+      run: az login
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
