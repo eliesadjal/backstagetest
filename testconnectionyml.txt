@@ -1,0 +1,18 @@
+on: [push]
+
+name: AzureLoginSample
+
+jobs:
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.SPCREDENTIALS}}
+    
+    - run: |
+        az account show
+© 2022 GitHub, Inc.
+Terms
