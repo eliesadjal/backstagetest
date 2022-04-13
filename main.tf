@@ -5,6 +5,7 @@ provider "azurerm" {
   features {}
 }
 
+
 # Creation of a Ressource Group
 
 resource "azurerm_resource_group" "BackstageRG" {
